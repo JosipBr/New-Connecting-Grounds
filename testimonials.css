@@ -1,0 +1,797 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* ADDING OUR OWN FONTS*/
+@font-face {
+    font-family: 'SK-Modernist-Mono';
+    src: url(fonts/Sk-Modernist-Mono.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'SK-Modernist-Bold';
+    font-weight: bold;
+    src: url(fonts/Sk-Modernist-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Aeonik-Regular';
+    src: url(fonts/Aeonik-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Magilio';
+    src: url(fonts/MagilioRegular.ttf) format("truetype");
+    
+}
+
+@font-face {
+    font-family: 'Halyard Display Book';
+    src: url(fonts/Halyard-Display-Book.ttf) format("truetype");
+   
+}
+
+@font-face {
+    font-family: 'Halyard Display';
+    src: url(fonts/Halyard\ Text\ Regular.ttf) format("truetype");
+   
+}
+body img{
+    
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*navigation box*/
+nav{
+    
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #EFEFEF;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: 1s;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+
+
+
+
+/*logo(left) part of the nav box*/
+nav #middle, #middlesticky, #middlesticky2{
+    width: 33%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#middlesticky, #middlesticky2{
+    display: none;
+}
+
+/*menu(right) part of the nav box*/
+nav #rgt1, #lft, #rgt2{
+    width: 33%;
+    font-family:'Halyard Display Book';
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#rgt1{
+    margin-right: 40px;
+}
+
+#lft{
+    margin-left: 40px;
+}
+
+#lft a{
+    text-decoration: none;
+    color: black;
+}
+
+.dropbtn img{
+    padding-left: 5px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+.dropdown .dropbtn {
+    font-family: 'Halyard Display Book';
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+   
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EFEFEF;
+    z-index: 1;
+    
+  }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 9px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+.sticky{
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+}
+
+.sticky .dropdown-content{
+    background-color: white;
+}
+
+.sticky #middlesticky{
+    display: flex;
+}
+
+.sticky #middlesticky2{
+    display: flex;
+}
+
+.sticky #middle, .sticky #middle2{
+    display: none;
+}
+
+
+/*  
+    navigation link animation  
+    code from:https://github.com/kevin-powell/fun-with-transforms-and-transform-origin/blob/master/css/main.css  
+    lines: 7-35
+*/
+.fancy-link {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  }
+  
+  .fancy-link:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+
+
+
+/*text edditing for the menu*/
+nav #rgt1 a{
+    text-decoration: none;
+    color: black;
+}
+/*headline design*/
+.headline{
+    padding-top: 200px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
+}
+
+.headline h1{
+    font-weight: normal;
+    font-family: 'Magilio';
+    text-align:center;
+    font-size: 6vw;
+}
+
+.headline p{
+    font-family: 'Halyard Display Book';
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: -10px;
+}
+
+hr{
+    margin-top: 30px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/*video section elements design*/
+.colorbox{
+    width: 100%;
+    background-color: #EFEFEF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title{
+    font-family: 'Halyard Display Book';
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.colorbox .secondtext{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Halyard Display Book';
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.madimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+    
+}
+
+.source{
+    padding-top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Halyard Display Book';
+}
+
+/*written testimonials*/
+.writtentestimonials{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.example{
+    padding-top: 80px;
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftarrow, .rightarrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftarrow{
+    padding-right: 60px;
+}
+
+.rightarrow{
+    padding-left: 60px;
+}
+
+.testimonial{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftquote{
+    display: flex;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+.rightquote{
+    display: flex;
+    align-items: flex-start;
+}
+
+.testimonialtext{
+    text-align: center;
+    font-family: 'Halyard Display Book';
+    font-size: 1.3vw;
+}
+
+.description{
+    padding-top: 30px;
+}
+
+.name{
+    font-family: 'Halyard Display Book';
+    font-size: 2.3vw;
+    text-align: center;
+}
+
+.mySlides{
+    display: none;
+}
+
+
+/*textarea and namebox design*/
+.namebox{
+    padding-top: 60px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.namebox input{
+    width: 25%;
+    border-width: 2px;
+    font-family: 'Halyard Display';
+    border-style: solid;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.textbox{
+    padding-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.textbox textarea
+{
+    width: 100%;
+    height: 200px;
+    
+}
+
+textarea{
+    padding: 0.5rem;
+    box-sizing: border-box;/*very good line that solved the problem of aligning the counter on the right of the textarea*/
+    border-style: solid;
+    border-width: 2px;
+    font-family: 'Halyard Display';
+    border-radius: 20px;
+}
+
+#counter{
+    float: right;
+}
+
+.button{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button{
+    font-family:'Halyard Display';
+    color:white;
+    border-style: solid;
+    border-color:#7FA285; 
+    padding: 10px;
+    background-color:#7FA285 ;
+    width: 10%;
+    border-radius: 20px;
+    font-size: 1.1vw;
+}
+
+.button button:hover{
+    color:#7FA285;
+    background-color:white;
+    border-color: #7FA285;
+    
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+/*footer*/
+footer{
+    
+    padding: 50px;
+    font-family: 'Halyard Display Book';
+    color: #EAE9E5;
+  
+   
+    
+    background-color: #7FA285;
+    text-decoration: none;
+}
+
+.bigfooter{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: #EAE9E5;
+}
+
+.aboutus{
+    width: 40%;
+}
+
+.aboutus p{
+    width: 85%;
+}
+
+.help{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+
+
+.socialmedia{
+    width: 25%;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.osm{
+   
+    display: flex;
+    align-items: center;
+    
+    padding-bottom: 5px;
+    
+}
+
+.osm p{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+
+/*responsive design*/
+/*navigation*/
+@media only screen and (max-width: 1180px){
+    body{
+        overflow-x: hidden;
+    }
+
+    #navbar2{
+        display: flex;
+    }
+    #navbar{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1180px){
+    #navbar2{
+        display: none;
+    }
+}
+
+/*footer mobile verion page*/
+@media only screen and (max-width: 1180px){
+    .bigfooter{
+        flex-direction: column;
+        width: 95%;
+        
+    }
+
+    .aboutus, .help, .socialmedia{
+        width: 100%;
+    }    
+
+    .aboutus, .help{
+        padding-bottom: 20px;
+    }
+
+    
+}
+
+/*headline mobile verion page*/
+@media only screen and (max-width: 1180px){
+    hr{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headline{
+        padding-top: 150px;
+        padding-bottom: 60px;
+    }
+
+    .headline h1{
+        font-size: 35px;
+    }
+
+    .headline p{
+        font-size: 15px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headline img{
+        width: 145px;
+        height: 25px;
+    }
+
+    .stars{
+        padding-top: 10px;
+    }
+}
+
+/*videobox mobile verion*/
+@media only screen and (max-width: 1180px){
+    .colorbox{
+        padding-top: 30px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .colorbox .secondtext{
+        font-size: 13px;
+        width: 75%;
+    }
+
+    .madimage img{
+        width: 298px;
+        height: 168px;
+    }
+
+    .source{
+        font-size: 10px;
+        width: 80%;
+    }
+}
+
+/*written testimonials mobile verion*/
+@media only screen and (max-width: 1180px){
+    .writtentestimonials{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .testimonial{
+        width: 90%;
+    }
+
+
+
+    .example{
+        width: 90%;
+    }
+
+    .leftarrow img, .rightarrow img{
+        width: 14px;
+        height: 14px;
+    }
+
+    .leftarrow{
+        padding-right: 0px;
+    }
+
+    .rightarrow{
+        padding-left: 20px;
+    }
+
+    .leftquote img, .rightquote img{
+        width: 14px;
+        height: 13px;
+    }
+
+    .example{
+        padding-top: 30px;
+    }
+
+    .name{
+        font-size: 17px;
+    }
+
+    .description{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+}
+
+/*text input mobile verion*/
+@media only screen and (max-width: 1180px){
+   #second{
+    width: 90%;
+   }
+
+   .namebox{
+    padding-top: 30px;
+    width: 80%;
+   }
+
+   .namebox input{
+    width: 60%;
+   }
+
+   .textbox{
+    width: 80%;
+   }
+
+   #counter p{
+    font-size: 10px
+   }
+
+   .button{
+    padding-top: 20px;
+   }
+
+   .button button{
+    font-size: 10px;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+}
+
+/*navigation after you press the burger icon*/
+#lft2 div{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    flex-direction: column;
+    margin: 3px;
+    transition: all 0.3s ease-in;
+}
+
+#lft2{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Halyard Display Book';
+}
+
+
+@media only screen and (max-width: 1180px){
+    .nav-links{
+        position: absolute;
+        left: 0px;
+        height: 100vh;
+        top: 100%;
+        background-color: #EFEFEF;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }       
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,8px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-8px);
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://use.typekit.net/esl4dht.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG Shop</title>
+</head>
+<body>
+   <!--navigation bar-->
+<nav id="navbar">
+    <div id="lft">
+        <a href="shop.html" class="fancy-link">Shop</a>
+        <div class="dropdown">
+            <button class="dropbtn">Resources<img src="images/dropdown.png" alt="dropdown"></button>
+            <div class="dropdown-content">
+                <a href="faq.html" class="fancy-link">FAQ</a>
+                <a href="testimonials.html" class="fancy-link">Testimonials</a>
+            </div>
+        </div>
+        <a href="blog.html" class="fancy-link">Blog</a>
+    </div>
+
+        
+    <div id="middle">
+        <a class="logo1" href="index.html"><img src="images/logocg.png" alt="logo"></a>
+    </div>
+    <div id="middlesticky">
+        <a class="logo2" href="index.html"><img src="images/logo.png" alt="logo2"></a>
+    </div>
+
+    <div id="rgt1">
+        <a href="events.html" class="fancy-link">Events</a>
+        <a href="#aboutus" class="fancy-link">About us</a>
+        <a href="#contact" class="fancy-link">Contact</a>
+        <a href="#shop"><img src="images/shopping.png" alt="shoppingbag"></a>
+    </div>
+    
+</nav>
+    
+
+    <!--responsive nav bar-->
+    <nav id="navbar2">
+        <div id="lft2">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div id="middle2">
+            <a class="logo1" href="index.html"><img src="images/logocg.png" alt="logo"></a>
+        </div>
+        <div id="middlesticky2">
+            <a class="logo2" href="index.html"><img src="images/logo.png" alt="logo2"></a>
+        </div>
+        <div id="rgt2">
+            <a href="#shop"><img src="images/shopping.png" alt="shoppingbag"></a>
+        </div>
+        <div>
+            
+            <ul class="nav-links">
+            <li><a href="shop.html" class="fancy-link">Shop</a></li>
+            <li><a href="faq.html" class="fancy-link">FAQ</a></li>
+            <li><a href="testimonials.html" class="fancy-link">Testimonials</a></li>
+            <li><a href="blog.html" class="fancy-link">Blog</a></li>
+            <li><a href="events.html" class="fancy-link">Events</a></li>
+            <li><a href="#aboutus" class="fancy-link">About us</a></li>
+            <li><a href="#contact" class="fancy-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Headline-->
+    <section class="headline">
+        <h1 class="elipse">Shop</h1>
+        <p>It's never too late to start being sustainable</p>
+        
+        <hr>
+    </section>
+
+
+    <!--filters-->
+    
+        <section class="filtercontainer">
+            <p>Filters:</p>
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('EnergyBars')"> Energy Bars</button>
+            <button class="btn" onclick="filterSelection('Bread')"> Bread</button>
+            <button class="btn" onclick="filterSelection('EnergyBals')"> Energy Balls</button>
+        </section>
+  
+
+
+    <!--product images-->
+    <!--energy bars-->
+    <section class="box">
+        <section class="container fade">
+            <section class="product filterDiv EnergyBars all">
+                <img src="images/chunkiejunkie.png" alt="bar1">
+                <p>Chunkie Junkie</p>
+                <p>DKK 15</p>
+                <section class="button"><a href="chocolatebar.html?price=15&name=Chunkie%Junkie"><button type="submit" value="15">Add to Cart</button></a></section>
+            </section>
+            <section class="product filterDiv EnergyBars all">
+                <img src="images/brownie.png" alt="bar2">
+                <p>Chocolate bar</p>
+                <p>DKK 15</p>
+                <section class="button"><button type="submit">Add to Cart</button></section>
+            </section>
+            <section class="product filterDiv Bread all">
+                <img src="images/ig1.png" alt="bar3">
+                <p>Bread</p>
+                <p>DKK 15</p>
+                <section class="button"><button type="submit">Add to Cart</button></section>
+            </section>
+            <section class="product filterDiv EnergyBals all">
+                <img src="images/ig5.png" alt="bar4">
+                <p>Energy ball</p>
+                <p>DKK 15</p>
+                <section class="button"><button type="submit">Add to Cart</button></section>
+            </section>
+        </section>
+        <a href="#"><p class="more filterDiv all">See more products ></p></a>
+        <a href="#"><p class="more filterDiv EnergyBars">See more energy bars ></p></a>
+        <a href="#"><p class="more filterDiv Bread">See more bread ></p></a>
+        <a href="#"><p class="more filterDiv EnergyBals">See more energy balls ></p></a>
+    </section>
+
+
+    <!--Most popular-->
+    <p class="popular"><b>Most popular</b></p>
+    <section class="box">
+        
+        <section class="container">
+            <section class="product">
+                <img src="images/bread.png" alt="bar1">
+                <p>Chocolate bar</p>
+                <p>DKK 15</p>
+                <section class="button"><button type="submit">Add to Cart</button></section>
+            </section>
+            <section class="product">
+                <img src="images/brownie.png" alt="bar2">
+                <p>Chocolate bar</p>
+                <p>DKK 15</p>
+                <section class="button"><button type="submit">Add to Cart</button></section>
+            </section>
+            <section class="product">
+                <img src="images/ig1.png" alt="bar3">
+                <p>Chocolate bar</p>
+                <p>DKK 15</p>
+                <section class="button"><button type="submit">Add to Cart</button></section>
+            </section>
+            <section class="product">
+                <img src="images/ig5.png" alt="bar4">
+                <p>Chocolate bar</p>
+                <p>DKK 15</p>
+                <section class="button"><button type="submit">Add to Cart</button></section>
+            </section>
+        </section>
+    </section>
+
+
+    <!--footer-->
+<footer>
+    <section class="bigfooter">
+        <section class="aboutus">
+            <h1>About us</h1>
+            <p>Our mission is to keep the nutritional value of the spent coffee grounds by upcycling it into food products. We want to be a part of sustainable food transition that doesn’t leave any resources behind, in order to secure the future of coffee and protect the environment from degradation.</p>
+        </section>
+        <section class="help">
+            <h1>Help</h1>
+            <a href="faq.html">FAQ</a>
+            <a href="#contactus">Contact us</a>
+            <a href="#termsandconditions">Terms and conditions</a>
+        </section>
+        <section class="socialmedia">
+            <h1>Our social media</h1>
+            <section class="osm">
+                <a href="https://www.instagram.com/connectinggrounds/" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="https://www.instagram.com/connectinggrounds/" target="_blank"><p>connectinggrounds</p></a>
+            </section>
+            <section class="osm">
+                <a href="https://www.linkedin.com/company/connecting-grounds/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.linkedin.com/company/connecting-grounds/" target="_blank"><p>Connecting Grounds</p></a>
+            </section>
+            <section class="osm">
+                <a href="mailto:contact@connecting-grounds.com" target="_blank"><img src="images/mail.png" alt="mail"></a>
+                <a href="mailto:contact@connecting-grounds.com" target="_blank"><p>contact@connecting-grounds.com</p></a>
+            </section>
+        </section>
+    </section>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>

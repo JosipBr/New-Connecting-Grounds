@@ -1,0 +1,1180 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+/* ADDING OUR OWN FONTS*/
+@font-face {
+    font-family: 'SK-Modernist-Mono';
+    src: url(fonts/Sk-Modernist-Mono.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'SK-Modernist-Bold';
+    font-weight: bold;
+    src: url(fonts/Sk-Modernist-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Aeonik-Regular';
+    src: url(fonts/Aeonik-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Magilio';
+    src: url(fonts/MagilioRegular.ttf) format("truetype");
+    
+}
+
+@font-face {
+    font-family: 'Halyard Display Book';
+    src: url(fonts/Halyard-Display-Book.ttf) format("truetype");
+   
+}
+
+
+@font-face {
+    font-family: 'Halyard Display';
+    src: url(fonts/Halyard\ Text\ Regular.ttf) format("truetype");
+   
+}
+
+body img{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*navigation box*/
+nav{
+    
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #EFEFEF;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: 1s;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+
+
+
+
+/*logo(left) part of the nav box*/
+nav #middle, #middlesticky, #middlesticky2{
+    width: 33%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#middlesticky, #middlesticky2{
+    display: none;
+}
+
+/*menu(right) part of the nav box*/
+nav #rgt1, #lft, #rgt2{
+    width: 33%;
+    font-family:'Halyard Display Book';
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#rgt1{
+    margin-right: 40px;
+}
+
+#lft{
+    margin-left: 40px;
+}
+
+#lft a{
+    text-decoration: none;
+    color: black;
+}
+
+.dropbtn img{
+    padding-left: 5px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+.dropdown .dropbtn {
+    font-family: 'Halyard Display Book';
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+   
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EFEFEF;
+    z-index: 1;
+    
+  }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 9px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+.sticky{
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+}
+
+.sticky .dropdown-content{
+    background-color: white;
+}
+
+.sticky #middlesticky{
+    display: flex;
+}
+
+.sticky #middlesticky2{
+    display: flex;
+}
+
+.sticky #middle, .sticky #middle2{
+    display: none;
+}
+
+
+/*  
+    navigation link animation  
+    code from:https://github.com/kevin-powell/fun-with-transforms-and-transform-origin/blob/master/css/main.css  
+    lines: 7-35
+*/
+.fancy-link {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  }
+  
+  .fancy-link:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+
+
+
+/*text edditing for the menu*/
+nav #rgt1 a{
+    text-decoration: none;
+    color: black;
+}
+
+/*landing page*/
+
+
+
+.landingpage{
+    padding-top: 150px;
+    background-color: #EFEFEF;
+    overflow: hidden;
+    height: 615px;
+    
+
+    font-family:'Magilio';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.landingpage .text{
+   height: 30%;
+   padding-top: 60px;
+}
+
+/*landing page bigger text*/
+.landingpage h1{
+    font-weight: normal;
+    text-align: center;
+    font-size: 92.16px;
+}
+
+@media only screen and (max-width: 1180px){
+    .landingpage h1{
+        font-size: 60px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+
+/*landing page smaller text*/
+.landingpage h2{
+    text-align: center;
+    color: black;
+    font-size: 2.5vw;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: halyard-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*bottom of the welcoming page*/
+.bottom{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    
+}
+
+.beantext{
+   width: 40%;
+   font-family: 'Halyard Display Book';
+   display: flex;
+   justify-content: flex-end;
+   margin-top: auto;
+   margin-bottom: auto;
+   font-size: 1.2vw;
+
+}
+
+.beantext p{
+   width:30%;
+   animation-name: bounce;
+   animation-duration: 2s;
+   animation-iteration-count: 3;
+   
+}
+
+.beantext b{
+    font-size: 1.5vw;
+}
+
+#p1{
+    font-size: 1.4vw;
+}
+
+#p2{
+    font-size: 1vw;
+}
+
+.beanjamin{
+    width: 40%;
+    margin-top: 100px;
+}
+
+.scrolldown{
+    
+   width: 20%;
+   font-family: 'halyard-display';
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: rotate(90deg);
+   
+   
+}
+
+.scrolldown a{
+    text-decoration: none;
+    color: black;
+}
+
+.scrolldown p{
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+}
+
+
+.scrolldown img{
+    max-width: 100%;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+
+
+/*bounce animation*/
+.image1{
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%   {transform: translateY(0%);}
+    50%  {transform: translateY(20%);}
+    100% {transform: translateY(0%);}
+}
+
+
+
+/*second part after you press the arrow*/
+.imageandtext{
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.imageandtext .paragraph{
+    width: 60%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.imageandtext .paragraph h1{
+    font-size: 3vw;
+    font-family: 'Halyard Display';
+    
+}
+
+.imageandtext .paragraph p{
+    font-size: 2vw;
+    font-family:'Halyard Display Book';
+}
+
+.imageandtext .image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/*howcanwehelp section design*/
+.howcanwehelp{
+    
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 0.5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.box2{
+    padding-bottom: 20px;
+}
+
+.howcanwehelp .left{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+    width: 50%;
+    font-family:'Aeonik-Regular';
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.howcanwehelp .left .paragraph2{
+    overflow-y: hidden;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    padding-right: 10%;
+    font-family:'Halyard Display Book';
+    color: black;
+}
+
+.howcanwehelp .left h1{
+    font-size: 3vw;
+}
+
+.howcanwehelp .left p{
+    font-size: 2vw;
+    width: 100%;
+}
+
+.btt{
+    padding-left: 10%;
+}
+
+.left button{
+    font-family:'Halyard Display';
+    color:#EAE9E5 ;
+    border-style: solid;
+    border-radius: 30px;
+    border-color:#EFEFEF; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#7FA285 ;
+    width: 25%;
+    font-size: 1.2vw;
+    margin-bottom: 30px;
+}
+
+.left button:hover{
+    color:#7FA285;
+    background-color: #EFEFEF;
+    cursor: pointer;
+    transition: 0.5s;
+    border-color: #7FA285;
+}
+
+
+
+.box{
+    overflow-y: hidden;
+    
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box2{
+    
+    width: 100%;
+}
+
+
+
+.howcanwehelp .right{
+   overflow-y: hidden;
+   width: 50%;
+   background-color: #EFEFEF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/*Join the movement desig*/
+.jointhemovement{
+    padding-top: 80px;
+    font-family: 'Halyard Display Book';
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jointext{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.jointhemovement h1{
+    font-size: 3vw;
+    
+}
+
+.jointhemovement p{
+    font-size: 2vw;
+}
+
+.buttons{
+    width: 30%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    font-family:'Halyard Display';
+    color:#EAE9E5 ;
+    border-style: solid;
+    border-color:#EAE9E5; 
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#7FA285 ;
+    font-size: 1.2vw;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}
+
+.buttons button:hover{
+    color:#7FA285;
+    background-color:#EFEFEF ;
+    transition: 0.5s;
+    border-color:#7FA285 ;
+}
+
+/*instagram style*/
+.socialbox{
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+.social{
+    
+    padding-top: 60px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Halyard Display Book';
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.social p{
+    padding-bottom: 20px;
+    font-size: 2vw;
+}
+
+.instagram{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.instagram .pair1, .pair2, .pair3, .pair4, .pair5{
+    height: 234px;
+    width: 234px;
+}
+
+.instagram .pair1 img, .pair2 img, .pair3 img, .pair4 img, .pair5 img{
+    height: 234px;
+    width: 234px;
+    opacity: 0;
+}
+
+
+
+.pair1{
+    background-image: url('images/ig1.png');
+}
+.pair2{
+    background-image: url('images/ig2.png');
+}
+.pair3{
+    background-image: url('images/ig3.png');
+}
+.pair4{
+    background-image: url('images/ig4.png');
+}
+.pair5{
+    background-image: url('images/ig5.png');
+}
+
+
+
+.instagram .pair1 img:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.instagram .pair2 img:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.instagram .pair3 img:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.instagram .pair4 img:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.instagram .pair5 img:hover{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+footer{
+    
+    padding: 50px;
+    font-family: 'Halyard Display Book';
+    color: #EAE9E5;
+  
+   
+    
+    background-color: #7FA285;
+    text-decoration: none;
+}
+
+.bigfooter{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: #EAE9E5;
+}
+
+.aboutus{
+    width: 40%;
+}
+
+.aboutus p{
+    width: 85%;
+}
+
+.help{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+
+
+.socialmedia{
+    width: 25%;
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.osm{
+   
+    display: flex;
+    align-items: center;
+    
+    padding-bottom: 5px;
+    
+}
+
+.osm p{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+}
+
+/*fade in animation*/
+.fade-in{
+    
+    overflow-y: hidden;
+    opacity: 0;
+    position: relative;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.fade-in.appear{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+/*move from left animation
+.move-from-left{
+    transform: translateX(-50%);
+}
+
+.move-from-right{
+    transform: translateX(50%);
+}
+
+.move-from-left, .move-from-right{
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+}
+
+.move-from-left.appear, .move-from-right.appear{
+    transform: translateX(0);
+    opacity: 1;
+}*/
+
+
+
+/*responsive design*/
+/*navigation*/
+@media only screen and (max-width: 1180px){
+    body{
+        overflow-x: hidden;
+    }
+
+    #navbar2,.mobilelandingpage{
+        display: flex;
+    }
+    #navbar,.landingpage, .socialbox{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1180px){
+    #navbar2,.mobilelandingpage, .socialmobile{
+        display: none;
+    }
+
+}
+
+
+/*landing page*/
+@media only screen and (max-width: 1180px){
+    .mobilelandingpage{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    padding-top:15vh;
+    height: 85vh;
+    background-color: #EFEFEF;
+}
+
+    .mobilelandingpage .text{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mobilelandingpage h1{
+        font-family: "Magilio";
+        font-size: 65px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .mobilelandingpage h2{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Halyard Display Book";
+        font-size: 24px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .mobilelandingpage .hi{
+        text-align: center;
+        padding-top: 60px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    #normal{
+        font-family: "Halyard Display";
+        font-size: 25px;
+    }
+
+    #book{
+        font-family: "Halyard Display Book";
+        font-size: 20px;
+    }
+
+    .beanandscroll{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        padding-top: 30px;
+    }
+
+    .bean{
+        width: 75%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .bean img{
+        height: 147px;
+        width: 168px;
+    }
+
+    .scrolldown{
+        width: 25%;
+        font-size: 15px;
+    }
+    .scrolldown p{
+        font-size: 7px;
+        
+    }
+    .scrolldown img{
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/*footer mobile verion page*/
+@media only screen and (max-width: 1180px){
+    .bigfooter{
+        flex-direction: column;
+        width: 95%;
+        
+    }
+
+    .aboutus, .help, .socialmedia{
+        width: 100%;
+    }    
+
+    .aboutus, .help{
+        padding-bottom: 20px;
+    }
+
+    
+}
+
+/*our mission mobile version*/
+@media only screen and (max-width: 1180px){
+
+    .imageandtext{
+        padding-top: 50px;
+        flex-direction: column;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imageandtext .paragraph{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .imageandtext .paragraph h1{
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    .imageandtext .paragraph p{
+        font-size: 17px;
+    }
+
+    .imageandtext .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-top: 30px;
+    }
+
+    .imageandtext .image img{
+       width: 180px;
+       height: 183px;
+    }
+}
+
+
+/*how can we help mobile version*/
+@media only screen and (max-width: 1180px){
+    .howcanwehelp{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .howcanwehelp .left{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 0px;
+        justify-content: center;
+    }
+
+    .howcanwehelp .left h1{
+        padding-bottom: 10px;
+        font-size: 32px;
+    }
+
+    .howcanwehelp .left p{
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    .howcanwehelp .left .btt{
+        padding-left: 0px;
+    }
+
+    .btt button{
+        width: 40%;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .howcanwehelp .right{
+        width: 100%;
+    }
+}
+
+/*jointhemovement mobile version*/
+@media only screen and (max-width: 1180px){
+
+    .jointhemovement{
+        padding-top: 30px;
+    }
+
+    .jointhemovement .jointext{
+        width: 100%;
+    }
+
+    .jointhemovement h1{
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+
+    .jointhemovement p{
+        font-size: 16px;
+    }
+
+    .jointhemovement button{
+        font-size: 16px;
+    }
+
+    .buttons{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*socialmedia mobile version*/
+@media only screen and (max-width: 1180px){
+
+    .socialmobile{
+        background-color: #EFEFEF;
+    }
+
+    .social{
+        padding-top: 30px;
+    }
+
+    .social p{
+        font-size: 20px;
+    }
+
+    .socialimages{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftarrow img, .rightarrow img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .mySlides{
+        display: none;
+    }
+
+    .instagram{
+        width: 70%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .instagram img{
+        width: 169px;
+        height: 169px;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+}
+
+
+/*navigation after you press the burger icon*/
+#lft2 div{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    flex-direction: column;
+    margin: 3px;
+    transition: all 0.3s ease-in;
+}
+
+#lft2{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Halyard Display Book';
+}
+
+
+@media only screen and (max-width: 1180px){
+    .nav-links{
+        position: absolute;
+        left: 0px;
+        height: 100vh;
+        top: 100%;
+        background-color: #EFEFEF;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }       
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,8px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-8px);
+}

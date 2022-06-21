@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://use.typekit.net/esl4dht.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Grounds Blog</title>
+</head>
+<body>
+    <!--navigation bar-->
+<nav id="navbar">
+    <div id="lft">
+        <a href="shop.html" class="fancy-link">Shop</a>
+        <div class="dropdown">
+            <button class="dropbtn">Resources<img src="images/dropdown.png" alt="dropdown"></button>
+            <div class="dropdown-content">
+                <a href="faq.html" class="fancy-link"><b>FAQ</b></a>
+                <a href="testimonials.html" class="fancy-link">Testimonials</a>
+            </div>
+        </div>
+        <a href="blog.html" class="fancy-link">Blog</a>
+    </div>
+
+        
+    <div id="middle">
+        <a class="logo1" href="index.html"><img src="images/logocg.png" alt="logo"></a>
+    </div>
+    <div id="middlesticky">
+        <a class="logo2" href="index.html"><img src="images/logo.png" alt="logo2"></a>
+    </div>
+
+    <div id="rgt1">
+        <a href="events.html" class="fancy-link">Events</a>
+        <a href="#aboutus" class="fancy-link">About us</a>
+        <a href="#contact" class="fancy-link">Contact</a>
+        <a href="#shop"><img src="images/shopping.png" alt="shoppingbag"></a>
+    </div>
+    
+</nav>
+    
+
+    <!--responsive nav bar-->
+    <nav id="navbar2">
+        <div id="lft2">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div id="middle2">
+            <a class="logo1" href="index.html"><img src="images/logocg.png" alt="logo"></a>
+        </div>
+        <div id="middlesticky2">
+            <a class="logo2" href="index.html"><img src="images/logo.png" alt="logo2"></a>
+        </div>
+        <div id="rgt2">
+            <a href="#shop"><img src="images/shopping.png" alt="shoppingbag"></a>
+        </div>
+        <div>
+            
+            <ul class="nav-links">
+            <li><a href="shop.html" class="fancy-link">Shop</a></li>
+            <li><a href="faq.html" class="fancy-link">FAQ</a></li>
+            <li><a href="testimonials.html" class="fancy-link">Testimonials</a></li>
+            <li><a href="blog.html" class="fancy-link">Blog</a></li>
+            <li><a href="events.html" class="fancy-link">Events</a></li>
+            <li><a href="#aboutus" class="fancy-link">About us</a></li>
+            <li><a href="#contact" class="fancy-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!--title part-->
+<section class="headline">
+    <h1>Frequently</h1><h1 class="elipse">asked questions</h1>
+    <p>Here are you can find frequently tackled topics and interests that may help you answer your questions.</p>
+    <hr>
+</section>
+
+<!--filter and search box-->
+<section class="filterandsearch">
+    <section class="filtercontainer">
+        <p>Filters:</p>
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('Shop')"> Shop</button>
+        <button class="btn" onclick="filterSelection('Discounts')"> Discounts</button>
+        <button class="btn" onclick="filterSelection('Shipping')"> Shipping</button>
+    </section>
+    <section class="searchbox">
+            <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search...">
+    </section>
+</section>
+
+<!--question and answer box-->
+<section class="hugebox">
+<section class="questionandanswerbox filterDiv Discounts all green">
+    <section class="question">
+        <p class="number ">1.</p>
+        <p class="questiontxt title">Do you provide a refund for canceling the order?</p>
+    </section>
+    <section class="answer">
+        <p><b>Yes, of course! And not only that!</b> We provide you with a discounted shipping back and get a present. <br>If you like to know more, don’t hesitate to reach out to us!</p>
+    </section>
+</section> 
+
+<section class="questionandanswerbox filterDiv Discounts all gray">
+    <section class="question">
+        <p class="number2 ">2.</p>
+        <p class="questiontxt title">Can I get a discount code or a voucher card?</p>
+    </section>
+    <section class="answer">
+        <p>If you recommend us to your two friends you can get a discount of <b>up to 20% off</b> and your <b>friends a gift card.</b><br>For shopping for up to <b>200 DKK</b>, you can get a <b>present voucher!</b></p>
+    </section>
+</section> 
+
+<section class="questionandanswerbox filterDiv Shop all green">
+    <section class="question">
+        <p class="number3 ">3.</p>
+        <p class="questiontxt title">Do you have physical shops as well?</p>
+    </section>
+    <section class="answer">
+        <p><b>Sadly, not yet BUT</b> we’re looking forward to opening an HQ soon which we will be happy to welcome you at.</p>
+    </section>
+</section> 
+
+<section class="questionandanswerbox filterDiv Shipping all gray">
+    <section class="question">
+        <p class="number4 title">4.</p>
+        <p class="questiontxt title">Are you shipping internationally?</p>
+    </section>
+    <section class="answer">
+        <p><b>Partially.</b> We’re shipping to Scandinavian countries now and will expand to international shipping soon enough.</p>
+    </section>
+</section> 
+
+</section>
+<hr class="long">
+<section class="wanttoknowmore">
+    <p id="want">Want to know more?</p>
+    <section class="paragraph">
+        <p>Don’t hesitate to contact us if you have more questions. </p>
+        <p>We are here and happy to help you.</p>
+        <p>You can leave us an email, a call, or a message and we’ll get back to you within 24 - 48 hours.</p>
+    </section>
+    <section class="contact">
+        <section class="imgandtxt">
+            <section class="imagee"><img src="images/mail2.png" alt="mail"></section>
+            <p>contact@connecting-grounds.com</p>
+        </section>
+        <section class="imgandtxt">
+            <section class="imagee"><img src="images/phone.png" alt="phone"></section>
+            <p>+45 22 93 12 75</p>
+        </section>
+    </section>
+</section>
+
+<!--footer-->
+<footer>
+    <section class="bigfooter">
+        <section class="aboutus">
+            <h1>About us</h1>
+            <p>Our mission is to keep the nutritional value of the spent coffee grounds by upcycling it into food products. We want to be a part of sustainable food transition that doesn’t leave any resources behind, in order to secure the future of coffee and protect the environment from degradation.</p>
+        </section>
+        <section class="help">
+            <h1>Help</h1>
+            <a href="faq.html">FAQ</a>
+            <a href="#contactus">Contact us</a>
+            <a href="#termsandconditions">Terms and conditions</a>
+        </section>
+        <section class="socialmedia">
+            <h1>Our social media</h1>
+            <section class="osm">
+                <a href="https://www.instagram.com/connectinggrounds/" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                <a href="https://www.instagram.com/connectinggrounds/" target="_blank"><p>connectinggrounds</p></a>
+            </section>
+            <section class="osm">
+                <a href="https://www.linkedin.com/company/connecting-grounds/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.linkedin.com/company/connecting-grounds/" target="_blank"><p>Connecting Grounds</p></a>
+            </section>
+            <section class="osm">
+                <a href="mailto:contact@connecting-grounds.com" target="_blank"><img src="images/mail.png" alt="mail"></a>
+                <a href="mailto:contact@connecting-grounds.com" target="_blank"><p>contact@connecting-grounds.com</p></a>
+            </section>
+        </section>
+    </section>
+    </footer>
+
+<script src="faq.js"></script>
+</body>
